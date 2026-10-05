@@ -108,6 +108,7 @@ class NodeList implements \IteratorAggregate
 	 * {@inheritDoc}
 	 * @see \IteratorAggregate::getIterator()
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		if ( is_null( $this->_list ) )

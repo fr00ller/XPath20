@@ -88,6 +88,7 @@ class AttributeNodeIterator extends SequentialAxisNodeIterator implements \Itera
 	 * Return an iterator foreach()
 	 * @return AttributeNodeIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this;

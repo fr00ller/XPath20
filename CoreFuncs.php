@@ -1137,7 +1137,7 @@ class CoreFuncs
 				case XmlTypeCode::NmToken:
 				case XmlTypeCode::Language:
 				case XmlTypeCode::NCName:
-				case XmlTypeCode::Id;
+				case XmlTypeCode::Id:
 				case XmlTypeCode::Idref:
 				case XmlTypeCode::Entity:
 				case XmlTypeCode::Name:

@@ -163,6 +163,7 @@ class ChildNodeIterator extends SequentialAxisNodeIterator implements \Iterator
 	 * Gets the iterator for the Iterator interface
 	 * @return \lyquidity\XPath2\Iterator\ChildNodeIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this;

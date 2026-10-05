@@ -79,6 +79,7 @@ class ContextProvider extends \ArrayIterator implements IContextProvider
 	 * Return the internal iterator
 	 * @return XPath2NodeIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this->m_iter;

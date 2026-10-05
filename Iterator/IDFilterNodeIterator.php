@@ -212,6 +212,7 @@ class IDFilterNodeIterator extends XPath2NodeIterator implements \Iterator
 	 * Return this iterator
 	 * @return IDFilterNodeIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this;

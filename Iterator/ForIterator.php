@@ -166,6 +166,7 @@ class ForIterator extends XPath2NodeIterator implements \Iterator
 	 * Return this iterator
 	 * @return \lyquidity\XPath2\Iterator\ForIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this;

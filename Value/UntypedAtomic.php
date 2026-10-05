@@ -138,7 +138,7 @@ class UntypedAtomic implements ICloneable, IComparable, IConvertable, IEquatable
 	{
 		if ( ! is_null( $this->_doubleValue ) )
 		{
-			$num = (double)$this->_doubleValue;
+			$num = (float)$this->_doubleValue;
 			return true;
 		}
 		if ( $this->CanBeNumber() )
@@ -331,7 +331,7 @@ class UntypedAtomic implements ICloneable, IComparable, IConvertable, IEquatable
 			{
 				$this->_doubleValue = Convert::ToDouble( $this->Value, $provider );
 			}
-			return is_null( $this->_doubleValue ) ? null : (double)$this->_doubleValue;
+			return is_null( $this->_doubleValue ) ? null : (float)$this->_doubleValue;
 		}
 		catch ( FormatException $ex )
 		{
@@ -533,7 +533,7 @@ class UntypedAtomic implements ICloneable, IComparable, IConvertable, IEquatable
 			}
 			catch( \Exception $ex )
 			{
-				$class = get_class();
+				$class = self::class;
 				echo "Error: $class {$ex->getMessage()}\n";
 			}
 

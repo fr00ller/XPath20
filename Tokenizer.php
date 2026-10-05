@@ -316,7 +316,7 @@ class Tokenizer implements \lyquidity\XPath2\parser\yyInput
 				}
 
 				// $this->ConsumeToken2( $tok, Integer::FromValue( $s ) );
-				$this->ConsumeToken2( $tok, ( Integer )$s );
+				$this->ConsumeToken2( $tok, ( int )$s );
 				break;
 
 			case Token::DecimalLiteral:
@@ -1926,6 +1926,7 @@ class StringReader
 	/**
 	 * Rewind the iterator to the beginning
 	 */
+	#[\ReturnTypeWillChange]
 	public function rewind()
 	{
 		$this->position = -1;

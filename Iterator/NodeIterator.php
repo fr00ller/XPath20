@@ -108,6 +108,7 @@ class NodeIterator extends XPath2NodeIterator implements \Iterator // \IteratorA
 	 * This function is used with the caller uses the 'foreach' syntax.
 	 * @return \Iterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		// return call_user_func( $this->callable );

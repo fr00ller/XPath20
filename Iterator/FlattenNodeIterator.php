@@ -127,6 +127,7 @@ class FlattenNodeIterator extends XPath2NodeIterator implements \Iterator
 	 * Returns the iterator to use in foreach calls
 	 * @return FlattenNodeIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return $this;

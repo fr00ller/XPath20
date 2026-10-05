@@ -112,6 +112,7 @@ class AbstractNode implements \IteratorAggregate
 	 * getIterator
 	 * @return \ArrayIterator
 	 */
+	#[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		if ( is_null( $this->_childs ) )

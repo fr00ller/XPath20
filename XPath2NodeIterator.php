@@ -413,6 +413,7 @@ class XPath2NodeIterator implements ICloneable, IEnumerable  //, \Iterator
 	 * Rewind the iterator
 	 * @return boolean
 	 */
+	#[\ReturnTypeWillChange]
 	public function rewind()
 	{
 		// BMS 2017-07-07 This was originally in the commented.
@@ -429,6 +430,7 @@ class XPath2NodeIterator implements ICloneable, IEnumerable  //, \Iterator
 	 * Get the current value
 	 * @return \lyquidity\xml\xpath\XPathNavigator
 	 */
+	#[\ReturnTypeWillChange]
 	public function current()
 	{
 		return $this->getCurrent();
@@ -438,6 +440,7 @@ class XPath2NodeIterator implements ICloneable, IEnumerable  //, \Iterator
 	 * Get the current key
 	 * @return number
 	 */
+	#[\ReturnTypeWillChange]
 	public function key()
 	{
 		return $this->pos;
@@ -447,6 +450,7 @@ class XPath2NodeIterator implements ICloneable, IEnumerable  //, \Iterator
 	 * Move to the next iterator. Return true if the iterator has moved or false.
 	 * @return boolean
 	 */
+	#[\ReturnTypeWillChange]
 	public function next()
 	{
 		$result = $this->MoveNext();
@@ -457,6 +461,7 @@ class XPath2NodeIterator implements ICloneable, IEnumerable  //, \Iterator
 	 * Find out if the iterator is valid (started and not finished)s
 	 * @return boolean
 	 */
+	#[\ReturnTypeWillChange]
 	public function valid()
 	{
 		return ! is_null( $this->iteratorFinished ) && ! $this->iteratorFinished; // $this->pos >= 0 && $this->pos < $this->count;

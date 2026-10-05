@@ -40,6 +40,7 @@ use \lyquidity\xml\schema\SchemaTypes;
 /**
  * Create a DOMSchemaDatatype instance
  */
+#[\AllowDynamicProperties]
 class DOMSchemaDatatype extends XmlSchemaDatatype
 {
 	/**

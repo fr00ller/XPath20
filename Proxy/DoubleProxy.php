@@ -520,7 +520,7 @@ class DoubleProxy extends ValueProxy implements IXmlSchemaType
 			}
 			catch( \Exception $ex )
 			{
-				$class = get_class();
+				$class = self::class;
 				echo "Error: $class {$ex->getMessage()}\n";
 			}
 
